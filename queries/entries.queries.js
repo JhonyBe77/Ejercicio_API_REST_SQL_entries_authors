@@ -20,7 +20,7 @@ const queries = {
         VALUES ($1,$2,$3,$4)`,
         
     getAllEntries:
-        `SELECT e.title, e.content, e.date, e.category, a.name, a.surname, a.image
+        `SELECT e.title, e.content, e.date, e.category, a.name, a.surname, a.image, a.email
         FROM entries AS e
         INNER JOIN authors AS a
         ON e.id_author = a.id_author;`,
