@@ -49,7 +49,7 @@ const deleteEntry = async (req, res) => {
     });
 }
 
-// Crear delete por title
+// Crear update por title
 const updateEntry = async (req, res) => {
     const newEntry = req.body; // {title,content,email,category}
     const response = await entry.updateEntry(newEntry);
@@ -65,3 +65,5 @@ module.exports = {
     deleteEntry,
     updateEntry,
 }
+
+
