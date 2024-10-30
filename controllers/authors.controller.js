@@ -2,7 +2,7 @@ const author = require('../models/authors.model'); // Importar el modelo de la B
 
 // DEVOLVER RUTAS
 // GET http://localhost:3000/authors --> ALL
-const getAllAuthors = async (req, res) => {
+const getAllAuthors = async (req, res) => { // hacer un try catch
     let authors = await author.getAllAuthors(req.query);
     res.status(200).json(authors); // [] con los authors encontradas
 }

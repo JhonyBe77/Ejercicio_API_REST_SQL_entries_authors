@@ -1,5 +1,6 @@
 SELECT * 
 FROM authors
+WHERE active = '1'
 
 SELECT name,
 FROM authors WHERE name = 'Alejandru'
